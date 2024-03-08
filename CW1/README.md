@@ -18,7 +18,7 @@ miejsc po przecinku.
 sumę, różnicę, iloczyn, iloraz, a + b, ab i ba 
 
 ## Zadanie domowe
-* ZDI. Napisz program, który poprosi użytkownika o podanie współrzędnych 
+* ZD1. Napisz program, który poprosi użytkownika o podanie współrzędnych 
 kartezjańskich x, y, z punktu w przestrzeni, a następnie przeliczy je na współrzędne w 
 układzie sferycznymi cylindrycznym i wypisze wyniki. Zadbaj nie tylko o poprawność 
 wyników, ale także o czytelność kodu i komunikację z użytkownikiem. Użyj funkcji 
