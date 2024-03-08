@@ -1,4 +1,5 @@
 import random
+import math
 
 
 def Z1():
@@ -65,9 +66,24 @@ def Z7():
 
 
 def Z8(k):
+    # dokończe
     a0 = 1
     a1 = 2
     an = 3
+
+
+def Z9(x, eps):
+    x_rad = math.radians(x)
+    x = x_rad % (2 * math.pi)
+
+    if x <= math.pi / 2:
+        print(sum(((-1) ** i) * (x ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
+    elif x <= math.pi:
+        print(sum(((-1) ** i) * ((math.pi - x) ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
+    elif x <= 3 * math.pi / 2:
+        print(sum(((-1) ** i) * ((x - math.pi) ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
+    else:
+        print(sum(((-1) ** i) * ((2 * math.pi - x) ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
 
 
 if __name__ == '__main__':
@@ -78,4 +94,5 @@ if __name__ == '__main__':
     # Z5()
     # Z6()
     # Z7()
-    Z8(8)
+    # Z8(8)
+    Z9(45, 15)
