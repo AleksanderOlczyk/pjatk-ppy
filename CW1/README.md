@@ -2,7 +2,7 @@
 
 ## Zadania na zajęciach
 
-* Z1 . Napisz program wypisujący dwa dowolne komunikaty na ekran. 
+* Z1. Napisz program wypisujący dwa dowolne komunikaty na ekran. 
 * Z2. Napisz program proszący użytkownika o imię i rok urodzenia, a następnie obliczający 
 i wypisujący jego wiek. 
 * Z3. Napisz program, który oblicza wynik dzielenia całkowitego bez reszty dla dwóch liczb 
