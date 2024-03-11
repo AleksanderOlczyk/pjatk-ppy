@@ -93,6 +93,33 @@ def Z9(x, eps):
         print(sum(((-1) ** i) * ((2 * math.pi - x) ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
 
 
+def Z10():
+    limit = 1000000
+    catalan_numbers = [1]
+    n = 0
+    even_count = 0
+
+    while True:
+        next_catalan = (4 * n + 2) // (n + 2) * catalan_numbers[-1]
+
+        if next_catalan >= limit:
+            break
+
+        catalan_numbers.append(next_catalan)
+
+        if next_catalan % 2 == 0:
+            even_count += 1
+
+        n += 1
+
+    odd_count = len(catalan_numbers) - even_count
+
+    print(f"Liczby Catalana mniejsze od {limit}:")
+    print(catalan_numbers)
+    print(f"\nIlosc liczb parzystych: {even_count}")
+    print(f"Ilosc liczb nieparzystych: {odd_count}")
+
+
 def ZD2():
     k = int(input("Podaj liczbę wartości y: "))
 
@@ -121,8 +148,8 @@ if __name__ == '__main__':
     # Z5()
     # Z6()
     # Z7()
-    Z8()
+    # Z8()
     # Z9(45, 15)
-    #Z10()
+    Z10()
     # ZD2()
 
