@@ -65,11 +65,18 @@ def Z7():
     print('wystapienia:', wystapienia)
 
 
-def Z8(k):
-    # dokończe
-    a0 = 1
-    a1 = 2
-    an = 3
+def Z8():
+    k = int(input("Podaj wartość k: "))
+    a0, a1 = 1, 2
+
+    while True:
+        current_term = 3 * a1 + a0
+
+        if current_term > k:
+            print(f"Najmniejszy wyraz większy od {k}: {current_term}")
+            break
+
+        a0, a1 = a1, current_term
 
 
 def Z9(x, eps):
@@ -114,8 +121,8 @@ if __name__ == '__main__':
     # Z5()
     # Z6()
     # Z7()
-    # Z8(8)
+    Z8()
     # Z9(45, 15)
     #Z10()
-    ZD2()
+    # ZD2()
 
