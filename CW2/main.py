@@ -86,6 +86,26 @@ def Z9(x, eps):
         print(sum(((-1) ** i) * ((2 * math.pi - x) ** (2 * i + 1)) / math.factorial(2 * i + 1) for i in range(eps)))
 
 
+def ZD2():
+    k = int(input("Podaj liczbę wartości y: "))
+
+    for x in [i / 10 for i in range(1, 11)]:
+        print(f"\nArgument x: {x}")
+
+        for _ in range(k):
+            y = float(input("Podaj wartość y: "))
+            result = f(x, y)
+            print(f"Argument y: {y}, Wartość funkcji: {result}")
+
+
+def f(x, y):
+    if math.sin(x) > math.cos(y):
+        result = sum([(x + y)**i / math.factorial(i) for i in range(1, 11)])
+    else:
+        result = x**5 + x**3 * y**2 + y**4
+    return result
+
+
 if __name__ == '__main__':
     # Z1()
     # Z2(1, 2, 2)
@@ -95,4 +115,7 @@ if __name__ == '__main__':
     # Z6()
     # Z7()
     # Z8(8)
-    Z9(45, 15)
+    # Z9(45, 15)
+    #Z10()
+    ZD2()
+
