@@ -42,3 +42,15 @@ Z10. Napisz program, który dla dowolnej sekwencji znaków (tańcuch znaków) po
 przez użytkownika, obliczy ile razy wystąpił w niej każdy z elementów (znak) i zwróci te
 dane jako wynik. Następnie wypisz liczbę wystąpień każdego elementu na ekran
 zaczynając od elementu najmniejszego.
+
+ZD3. Napisać program:
+1. losujący liczby rzeczywiste do tablicy A o rozmiarze n x n (n - stała) z zakresu <-3*i-1, 5*j+4> (i,j indeksy elementów tablicy, dla których losowane są elementy) dla
+elementów znajdujących się nad obiema przekątnymi. Pozostałe elementy
+wylosować z zakresu <0;X> (wymusić, aby X była większa niż 1 oraz mniejsza niż
+7).
+
+2. przesunąć cyklicznie do góry o dwie pozycje te kolumny w których suma
+elementów jest większa od liczby podanej przez użytkownika. Jeżeli warunek jest
+niespełniony przesunąć cyklicznie w dóło K pozycji (K-stała).
+
+3. wypisać wierszami tablicę A przed i po przesunięciu.
