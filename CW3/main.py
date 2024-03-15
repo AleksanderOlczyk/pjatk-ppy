@@ -16,6 +16,10 @@ def swapPositions(list, pos1, pos2):
     return list
 
 
+def ZD3():
+    pass
+
+
 if __name__ == '__main__':
     # Z1()
     # Z2()
@@ -27,4 +31,4 @@ if __name__ == '__main__':
     # Z8()
     # Z9()
     # Z10()
-    # ZD3()
+    ZD3()
