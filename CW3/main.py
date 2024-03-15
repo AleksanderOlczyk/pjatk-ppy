@@ -16,6 +16,23 @@ def swapPositions(list, pos1, pos2):
     return list
 
 
+def znajdzTrojkiPitagorejskie(N):
+    trojki = []
+    for a in range(1, N + 1):
+        for b in range(a, N + 1):
+            for c in range(b, N + 1):
+                if a ** 2 + b ** 2 == c ** 2:
+                    trojki.append((a, b, c))
+    return trojki
+
+
+def Z2():
+    N = 30
+    trojki = znajdzTrojkiPitagorejskie(N)
+    for trojka in trojki:
+        print(trojka)
+
+
 def Z3():
     tup = ()
     N = 10
@@ -24,9 +41,9 @@ def Z3():
     for i in range(N):
         row = ()
         for j in range(N):
-            row += (x, )
+            row += (x,)
             x += 1
-        tup += (row, )
+        tup += (row,)
 
     sum = 0
     for i in range(N):
@@ -36,8 +53,8 @@ def Z3():
 
 if __name__ == '__main__':
     # Z1()
-    # Z2()
-    Z3()
+    Z2()
+    # Z3()
     # Z4()
     # Z5()
     # Z6()
