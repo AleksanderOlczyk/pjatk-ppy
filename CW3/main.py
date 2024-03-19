@@ -1,10 +1,11 @@
 import random as rand
+import numpy as np
 
 
 def Z1():
     liczby = []
     sum = 0
-    for i in range (0, 20):
+    for i in range(0, 20):
         randomNumber = rand.randint(-10, 20)
         liczby.append(randomNumber)
         sum += randomNumber
@@ -51,9 +52,39 @@ def Z3():
     print(sum)
 
 
+def ZD3(n, value, K):
+    def generate_random_number(X):
+        return np.random.uniform(0, X)
+
+    def generate_constrained(i, j):
+        return np.random.uniform(-3 * i - 1, 5 * j + 4)
+
+    A = np.zeros((n, n))
+    for i in range(n):
+        for j in range(n):
+            if i < j:
+                A[i][j] = generate_constrained(i, j)
+            else:
+                A[i][j] = generate_random_number(7)
+
+    print("Array A before shifting:")
+    print(A)
+
+    column_sums = np.sum(A, axis=0)
+
+    for i in range(n):
+        if column_sums[i] > value:
+            A[:, i] = np.roll(A[:, i], -2)  # shift column up by 2 positions
+        else:
+            A[:, i] = np.roll(A[:, i], K)  # shift column down by K positions
+
+    print("\nArray A after shifting:")
+    print(A)
+
+
 if __name__ == '__main__':
     # Z1()
-    Z2()
+    # Z2()
     # Z3()
     # Z4()
     # Z5()
@@ -62,4 +93,5 @@ if __name__ == '__main__':
     # Z8()
     # Z9()
     # Z10()
-    # ZD3()
+    value = float(input("Enter a number: "))
+    ZD3(5, value, 3)
