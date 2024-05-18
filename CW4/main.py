@@ -48,9 +48,13 @@ def create_car_matrix(n):
     for i in range(n):
         row = []
         for j in range(n):
+            # brand = input(f"Enter brand of car at position [{i}][{j}]: ")             # losowe dane dla testów
+            # year = int(input(f"Enter year of car at position [{i}][{j}]: "))          # losowe dane dla testów
+            # price = float(input(f"Enter price of car at position [{i}][{j}]: "))      # losowe dane dla testów
             brand = input(f"Enter brand of car at position [{i}][{j}]: ")
             year = int(input(f"Enter year of car at position [{i}][{j}]: "))
             price = float(input(f"Enter price of car at position [{i}][{j}]: "))
+            print("\n\n")
             row.append(Car(brand, year, price))
         matrix.append(row)
     return matrix

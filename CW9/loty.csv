@@ -1,0 +1,9 @@
+Date	Location	Temperature	Humidity	WindSpeed	Weather	FlightCancelled
+01.01.2023	JFK	-3	85	15	Snow	Yes
+02.01.2023	LAX	22	30	5	Sunny	No
+03.01.2023	ORD	-10	80	20	Snow	Yes
+04.01.2023	ATL	10	60	25	Rain	No
+05.01.2023	DFW	5	50	10	Cloudy	No
+06.01.2023	DEN	-5	40	15	Snow	No
+07.01.2023	MIA	25	70	10	Sunny	No
+08.01.2023	SEA	8	80	30	Rain	Yes
